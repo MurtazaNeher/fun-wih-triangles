@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+:root {
+    --primary-color: black;
+    --font-color: black;
+}
+
+body {
+    font-family: 'Source Serif 4', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    background-image: url(/images/Animated\ Shape.svg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#discription {
+    color: white;
+    font-size: 20px;
+}
+
+#heading {
+    text-align: center;
+    color: yellow;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 40px;
+}
+
+label {
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+.input {
+    width: 100px;
+    height: 40px;
+    border: 2px dotted black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.input:hover {
+    border: 2px dashed black;
+}
+
+#is-triangle-btn {
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    font-size: 17px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: yellow;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#is-triangle-btn:hover {
+    background-color: black;
+    border: 2px solid white;
+    transition: 0.2s;
+    color: yellow;
+}
+
+#output-is-triangle {
+    font-size: larger;
+    color: yellow;
+    background-color: black;
+    width: max-content;
+    border: 2px solid white;
+    margin: auto;
+    max-width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+#calculate-hypotenuse-btn {
+    width: fit-content;
+    margin: auto;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: yellow;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#calculate-hypotenuse-btn:hover {
+    background-color: black;
+    border: 2px solid white;
+    transition: 0.2s;
+    color: yellow;
+}
+
+#output-hypotenuse {
+    color: yellow;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: max-content;
+    margin: auto;
+    max-width: 95%;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: 26px;
+}
