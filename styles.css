@@ -306,3 +306,85 @@ label {
     font-size: 40px;
     margin-bottom: 2rem;
 }
+
+@media (max-width: 900px) {
+    .container-is-triangle {
+        width: 70%;
+    }
+    .container-hypotenuse {
+        width: 70%;
+    }
+    .nav {
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    .nav-item {
+        display: inline;
+        float: left;
+        color: white;
+        border-right: 1px solid yellow;
+    }
+    .nav-item:last-child {
+        border-right: none;
+    }
+    .nav-item.nav-a {
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    #heading-is-triangle {
+        font-size: 33px;
+    }
+    #heading-hypotenuse {
+        font-size: 33px;
+    }
+    #heading-area {
+        font-size: 33px;
+    }
+    #heading-quiz {
+        font-size: 33px;
+    }
+    #output-is-triangle {
+        width: 80%;
+        font-size: 20px;
+    }
+    #output-hypotenuse {
+        width: 80%;
+        font-size: 20px;
+    }
+    .footer {
+        list-style-type: none;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 1rem;
+        overflow: hidden;
+        color: yellow;
+        background-color: black;
+        width: fit-content;
+        border-radius: 10rem;
+    }
+    .footer-item {
+        display: inline;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        font-size: 20px;
+    }
+    .footer-head {
+        display: block;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    .logo {
+        font-size: 30px;
+        color: yellow;
+        text-decoration: none;
+    }
+}
