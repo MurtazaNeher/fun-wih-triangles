@@ -8,12 +8,12 @@
     <title>Area of Triangles</title>
     <script src="https://kit.fontawesome.com/ccbe6a25e7.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleArea.css">
 </head>
 
 <body>
 
-    <h1 id="heading-area">Area of Triangle</h1>
+    <h1 id="heading-area">Check Area of Triangle</h1>
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-item nav-a" href="index.html"> Is triangle?</a>
@@ -30,7 +30,21 @@
             <a class="nav-item nav-a  nav-active">Area of triangle</a>
         </li>
     </ul>
+    <div class="container-area">
+        <h3 id="area-formula">Area of a Triangle = 1/2(Height*Base)</h3>
+        <p id="discription-area">Enter Height and Base of triangle to calculate area</p>
+        <label for="base">Enter length of Base</label>
+        <input type="number" id="base" class="input">
+        <label for="hieght">Enter length  of Height</label>
+        <input type="number" id="height" class="input">
 
+        <button id="calculate-area-btn">calculate area</button>
+
+        <div id="output-area-mssg">Output will come here!!!</div>
+        <div id="output-area"></div>
+        <button id="clear-btn">clear</button>
+
+    </div>
     <footer>
         <ul class="footer">
 

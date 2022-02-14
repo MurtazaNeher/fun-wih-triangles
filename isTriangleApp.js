@@ -15,10 +15,14 @@ function isTriangle() {
 
     outputIsTriangle.style.display = "block";
 
-    if (sum === 180) {
-        outputIsTriangle.innerText = "Yeah ! The triangle can be formed by your given angles."
+    if (inputAngle[0].value && inputAngle[1].value && inputAngle[2].value) {
+        if (sum === 180) {
+            outputIsTriangle.innerText = "Yeah ! The triangle can be formed by your given angles."
+        } else {
+            outputIsTriangle.innerText = "Oh no ! The triangle can not be formed by your given angles "
+        }
     } else {
-        outputIsTriangle.innerText = "Oh no ! The triangle can not be formed by your given angles "
+        outputIsTriangle.innerText = "Please fill all the fields"
     }
 }
 

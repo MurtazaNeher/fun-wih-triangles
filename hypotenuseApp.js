@@ -22,13 +22,17 @@ function calculateSumOfSquares(a, b) {
 
 function calculateHypotenuse() {
 
-    const sumOfSquares = calculateSumOfSquares(Number(sideOne.value), Number(sideTwo.value));
-    const hypotenuse = Math.sqrt(sumOfSquares);
     outputHypotenuseMssg.style.display = "none";
 
     outputHypotenuse.style.display = "block";
+    if (sideOne.value && sideTwo.value) {
+        const sumOfSquares = calculateSumOfSquares(Number(sideOne.value), Number(sideTwo.value));
+        const hypotenuse = Math.sqrt(sumOfSquares);
 
-    outputHypotenuse.innerText = "The lenght of hypotenuse is : \n" + hypotenuse;
+        outputHypotenuse.innerText = "The lenght of hypotenuse is : \n" + hypotenuse + " unit";
+    } else {
+        outputHypotenuse.innerText = "Please fill all the fields"
+    }
 }
 
 function clear() {
