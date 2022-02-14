@@ -60,6 +60,10 @@ label {
     border-right: 1px solid yellow;
 }
 
+.nav-item:last-child {
+    border-right: none;
+}
+
 .nav-item.nav-a {
     display: block;
     padding: 12px 18px;
@@ -328,6 +332,15 @@ label {
     .nav-active {
         background-color: yellow;
         color: black;
+    }
+    .nav-item.nav-a {
+        display: block;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        text-decoration: none;
+        cursor: pointer;
     }
     #heading-is-triangle {
         font-size: 33px;
