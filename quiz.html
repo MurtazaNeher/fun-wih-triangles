@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleQuiz.css">
+    <!-- <link rel="stylesheet" href="styleQuiz.css"> -->
     <script src="https://kit.fontawesome.com/ccbe6a25e7.js" crossorigin="anonymous"></script>
 
     <title>Quiz</title>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!-- 
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-item nav-a" href="index.html"> Is triangle?</a>
@@ -29,22 +29,28 @@
         <li class="nav-item">
             <a class="nav-item nav-a" href="area.html">Area of triangle</a>
         </li>
-    </ul>
+    </ul> -->
     <h1 id="heading-quiz">Triangle Quiz</h1>
 
     <form class="quiz-form">
         <div class="question-container">
             <p>How many 90 degree angles a triangle can have ?</p>
-            <label><input type="radio" name="question1">2</label>
-            <label><input type="radio" name="question1">1</label>
-            <label><input type="radio" name="question1">0</label>
+            <label><input type="radio" name="question1" value = "2">2</label>
+            <label><input type="radio" name="question1" value="1">1</label>
+            <label><input type="radio" name="question1" value="0">0</label>
 
         </div>
-        <div class="question-container"></div>
+        <div class="question-container">
+            <p>Longest side of a right angled triangle is called ?</p>
+            <label><input type="radio" name="question2" value="Hypotenuse">Hypotenuse</label>
+            <label><input type="radio" name="question2" value="Base">Base</label>
+            <label><input type="radio" name="question2" value="Perimeter">Perimeter</label>
 
-
+        </div>
     </form>
-
+    <button id="submit-ans-btn">Submit answers</button>
+    <div id="output"></div>
+    <!-- 
     <footer>
         <ul class="footer">
 
@@ -73,7 +79,7 @@
                 </a>
             </li>
         </ul>
-    </footer>
+    </footer> -->
     <script src="/quiz.js"></script>
 </body>
 
