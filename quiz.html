@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styleQuiz.css"> -->
+    <link rel="stylesheet" href="styleQuiz.css">
     <script src="https://kit.fontawesome.com/ccbe6a25e7.js" crossorigin="anonymous"></script>
 
     <title>Quiz</title>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- 
+
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-item nav-a" href="index.html"> Is triangle?</a>
@@ -29,8 +29,11 @@
         <li class="nav-item">
             <a class="nav-item nav-a" href="area.html">Area of triangle</a>
         </li>
-    </ul> -->
-    <h1 id="heading-quiz">Triangle Quiz</h1>
+    </ul>
+    <h1 id="heading-quiz">Quiz on Triangles
+        <h3>For each correct answer you will get 1 point</h3>
+    </h1>
+
 
     <form class="quiz-form">
         <div class="question-container">
@@ -45,12 +48,54 @@
             <label><input type="radio" name="question2" value="Hypotenuse">Hypotenuse</label>
             <label><input type="radio" name="question2" value="Base">Base</label>
             <label><input type="radio" name="question2" value="Perimeter">Perimeter</label>
-
         </div>
+
+
+        <div class="question-container">
+            <p>What will be the third angle of triangle whose two angles are 100° & 50° ?</p>
+            <label><input type="radio" name="question3" value="50°">50°</label>
+            <label><input type="radio" name="question3" value="40°">40°</label>
+            <label><input type="radio" name="question3" value="30°">30°</label>
+        </div>
+
+
+        <div class="question-container">
+            <p>Triangle whose all angle are less than 90° is called .......... triangle ?</p>
+            <label><input type="radio" name="question4" value="right-angled">right-angled</label>
+            <label><input type="radio" name="question4" value="acute-angled">acute-angled</label>
+            <label><input type="radio" name="question4" value="obtuse-angled">obtuse-angled</label>
+        </div>
+
+        <div class="question-container">
+            <p>If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
+            <label><input type="radio" name="question5" value="30°">30°</label>
+            <label><input type="radio" name="question5" value="20°">20°</label>
+            <label><input type="radio" name="question5" value="10°">10°</label>
+        </div>
+
+
+        <div class="question-container">
+            <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
+            <label><input type="radio" name="question6" value="85°">85°</label>
+            <label><input type="radio" name="question6" value="45°">45°</label>
+            <label><input type="radio" name="question6" value="65°">65°</label>
+        </div>
+
+
+
+        <div class="question-container">
+            <p> A scalene triangle has ___ lines of symmetry?</p>
+            <label><input type="radio" name="question7" value="no">no</label>
+            <label><input type="radio" name="question7" value="two">two</label>
+            <label><input type="radio" name="question7" value="15">15</label>
+        </div>
+
+
     </form>
     <button id="submit-ans-btn">Submit answers</button>
     <div id="output"></div>
-    <!-- 
+    <button id="clear-btn" onclick="location.href = 'https://fun-with-triangles-murtaza.netlify.app/quiz.html';">reset</button>
+
     <footer>
         <ul class="footer">
 
@@ -79,7 +124,7 @@
                 </a>
             </li>
         </ul>
-    </footer> -->
+    </footer>
     <script src="/quiz.js"></script>
 </body>
 
