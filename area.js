@@ -13,7 +13,7 @@ function calculateArea() {
     if (base.value && height.value) {
 
         const sum = Number(base.value) * Number(height.value);
-        const area = sum * 0.5
+        const area = (sum * 0.5).toFixed(2);
         outputArea.style.display = "block";
         outputAreaMssg.style.display = "none";
         outputArea.innerText = "Area of triangle is : " + area + " sq. unit.";

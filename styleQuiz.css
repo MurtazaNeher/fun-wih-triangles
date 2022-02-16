@@ -208,7 +208,7 @@ label {
         display: inline;
         float: left;
         color: white;
-        border-right: 1px solid yellow;
+        border-right: 2px solid yellow;
     }
     .nav-active {
         background-color: yellow;

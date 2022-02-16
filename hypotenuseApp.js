@@ -27,7 +27,7 @@ function calculateHypotenuse() {
     outputHypotenuse.style.display = "block";
     if (sideOne.value && sideTwo.value) {
         const sumOfSquares = calculateSumOfSquares(Number(sideOne.value), Number(sideTwo.value));
-        const hypotenuse = Math.sqrt(sumOfSquares);
+        const hypotenuse = Math.sqrt(sumOfSquares).toFixed(2);
 
         outputHypotenuse.innerText = "The lenght of hypotenuse is : \n" + hypotenuse + " unit";
     } else {
