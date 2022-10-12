@@ -10,7 +10,7 @@ outputAreaMssg.style.display = "block";
 
 
 function calculateArea() {
-    if (base.value && height.value) {
+    if (base.value>0 && height.value>0) {
 
         const sum = Number(base.value) * Number(height.value);
         const area = (sum * 0.5).toFixed(2);
@@ -20,7 +20,7 @@ function calculateArea() {
     } else {
         outputArea.style.display = "block";
         outputAreaMssg.style.display = "none";
-        outputArea.innerText = "Please fill both the fields";
+        outputArea.innerText = "Please fill both the fields with positive numbers";
     }
 }
 
